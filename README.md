@@ -1,37 +1,65 @@
-# Empire of Sports 2.0 - Tennis Prototype
+# Empire of Sports 2.0 🎾⚽🏀
 
-Modern reimagination of the world's first multi-sport MMORPG, built with Unity and AI-powered tools.
+[![Unity Version](https://img.shields.io/badge/Unity-6.0-blue.svg)](https://unity.com/)
+[![C#](https://img.shields.io/badge/C%23-12.0-purple.svg)](https://docs.microsoft.com/en-us/dotnet/csharp/)
+[![License](https://img.shields.io/badge/License-Private-red.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-In_Development-yellow.svg)](https://github.com/Starlight19973/empireofsports)
 
-## Project Info
+> Modern reimagination of the world's first multi-sport MMORPG, built with Unity 6 and AI-powered tools.
 
-- **Engine:** Unity 6 (6000.3.2f1)
-- **Language:** C#
-- **IDE:** Visual Studio Code
-- **First Sport:** Tennis
-- **Target Platform:** PC (Windows), Web (WebGL)
+## 📋 Project Info
 
-## Project Structure
+| Parameter | Value |
+|-----------|-------|
+| **Engine** | Unity 6 (6000.3.2f1) |
+| **Language** | C# 12.0 |
+| **IDE** | Visual Studio Code |
+| **First Sport** | Tennis 🎾 |
+| **Target Platform** | PC (Windows), Web (WebGL) |
+| **Development Start** | December 2025 |
+| **Target MVP** | 3 months |
+
+## 🎯 About
+
+Empire of Sports was the world's first multi-sport MMORPG, developed by French studio F4 and launched in 2009. With a budget of €30M, it featured 9 sports and ran until 2016.
+
+**Our version** brings this concept back to life with:
+- Modern Unity 6 engine
+- AI-generated assets (Mixamo, Meshy.ai, Tripo3D)
+- Free-to-use networking (Photon Fusion, PlayFab)
+- Budget: $50K-100K (vs original $30M)
+- Timeline: 3 months to MVP
+
+## 📁 Project Structure
 
 ```
 EmpireOfSports/
 ├── Assets/
 │   ├── Scenes/              # Game scenes
 │   ├── Scripts/             # All C# code
-│   │   ├── Core/            # Core systems
-│   │   ├── Player/          # Player logic
+│   │   ├── Core/            # ✅ HelloWorld.cs
+│   │   ├── Player/          # Player controller logic
 │   │   ├── Sports/          # Sport mechanics
-│   │   │   └── Tennis/      # Tennis implementation
-│   │   ├── Network/         # Multiplayer
+│   │   │   └── Tennis/      # Tennis implementation (TennisBall, CourtManager, etc.)
+│   │   ├── Network/         # Photon Fusion multiplayer
 │   │   ├── UI/              # UI scripts
-│   │   └── Managers/        # Game managers
+│   │   └── Managers/        # Game managers (ScoreManager, etc.)
 │   ├── Prefabs/             # Prefab objects
 │   ├── Materials/           # Materials
 │   ├── Textures/            # Textures
-│   ├── Models/              # 3D models
-│   ├── Animations/          # Animation files
+│   ├── Models/              # 3D models (from Mixamo, Meshy.ai)
+│   ├── Animations/          # Animations (from Mixamo)
 │   ├── Audio/               # Sounds and music
 │   └── Resources/           # Runtime loaded assets
-└── [Other Unity folders]
+├── docs/                    # 📚 Complete documentation
+│   ├── GETTING_STARTED_VSCODE.md
+│   ├── EMPIRE_OF_SPORTS_QUICKSTART.md (full tennis code)
+│   ├── EMPIRE_OF_SPORTS_RESEARCH.md
+│   ├── EMPIRE_OF_SPORTS_SERVER_INFRASTRUCTURE.md
+│   └── UNITY_SETUP_WINDOWS.md
+├── claude.md                # Claude Code AI context
+├── NEXT_STEPS.md            # ⭐ What to do next
+└── README.md                # This file
 ```
 
 ## Quick Start
@@ -121,16 +149,41 @@ Useful prompts:
 - [Photon Fusion Docs](https://doc.photonengine.com/fusion/)
 - Main project docs: `../docs/`
 
-## Current Status
+## 📊 Current Status
 
-- [x] Unity project created
-- [x] Folder structure set up
-- [x] .gitignore configured
-- [x] HelloWorld.cs ready for testing
-- [ ] VS Code configured as editor
-- [ ] Input System installed
-- [ ] First scene created
-- [ ] Tennis court prototype started
+### ✅ Completed
+- [x] Unity 6 project created
+- [x] Folder structure organized
+- [x] Git repository initialized
+- [x] GitHub integration
+- [x] Complete documentation written
+- [x] HelloWorld.cs test script
+
+### 🚧 In Progress
+- [ ] VS Code configured as external editor
+- [ ] Unity packages installed (Input System, TextMeshPro, Cinemachine)
+- [ ] First tennis scene created
+- [ ] Tennis court prototype
+
+### 📅 Roadmap (3 months)
+
+#### Month 1: Prototype
+- Tennis court + ball physics
+- Player controller (WASD movement)
+- Basic AI opponent
+- Score system
+
+#### Month 2: Gameplay
+- Multiple shot types
+- Power/spin mechanics
+- UI/UX polish
+- Sound effects
+
+#### Month 3: Multiplayer
+- Photon Fusion integration
+- 1v1 online matches
+- Matchmaking
+- Alpha testing (50-100 players)
 
 ## License
 
